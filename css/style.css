@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+#nav_style {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#nav_style a {
+    color: white;
+}
+
+
+.country {
+    background-color: darkorchid;
+    color: white;
+}
+
+.totalConfirmed {
+    background-color: #0baaf4;
+    color: rgba(0,0,0,1);
+}
+
+.TotalRecovered {
+    background-color: hsl(120, 94%, 54%);
+    color: rgba(0,0,0,0.7);
+}
+
+.TotalDeath {
+    background-color: red;
+    color: rgba(0,0,0,0.7);
+}
+.NewConfirmed {
+    background-color: #0baaf4;
+    color: rgba(0,0,0,0.7);
+}
+
+.NewRecovered {
+    background-color: hsl(120, 94%, 54%);
+    color: rgba(0,0,0,0.7);
+}
+
+.NewDeaths {
+    background-color: red;
+    color: rgba(0,0,0,0.7);
+}
+td {
+    opacity: 0.8;
+}
+
+.india_corona_update, world_corona_update {
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+#india_tbval tr {
+    text-align: center;
+}

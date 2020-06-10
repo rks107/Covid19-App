@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Tracker</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="fetch()">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light p-3" id="nav_style">
+        <a class="navbar-brand pl-4" href="#">COVID-19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto pr-4">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Symptoms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Prevention</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+              
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+
+        <section class="india_corona_update border border-secondary m-4 p-4">
+            <div class="mb-3"> 
+                <h3 class="text-center text-uppercase text-primary"> India covid-19 Cases</h3>
+             </div>
+         
+             <div class="table-responsive">
+                 <table class="table tex-center border-0" id="india_tbval">
+                     <tr>
+                         <th>Total Confirmed</th>
+                         <th>Total Recovered</th>
+                         <th>Total Death</th>
+                         <th> New Confirmed </th>
+                         <th>New Recovered</th>
+                         <th>New Death</th>
+                     </tr>
+                 </table>
+                </div>
+        </section>
+
+        <section class="world_corona_update border border-secondary m-4 p-4">
+            <div class="mb-3"> 
+                <h3 class="text-center text-uppercase text-primary"> world covid-19 cases</h3>
+             </div>
+         
+             <div class="table-responsive">
+                 <table class="table tex-center border-0" id="world_tbval">
+                     <tr>
+                         <th>Total Confirmed</th>
+                         <th>Total Recovered</th>
+                         <th>Total Death</th>
+                         <th> New Confirmed </th>
+                         <th>New Recovered</th>
+                         <th>New Death</th>
+                     </tr>
+                 </table>
+             </div>
+        </section>
+
+        <section class="corona_update container-fluid">
+            <div class="mb-3">
+                <h3 class="text-center text-uppercase text-primary"> covid-19 live updates of world</h3>
+             </div>
+         
+             <div class="table-responsive">
+                 <table class="table table-bordered table-striped tex-center" id="tbval">
+                     <tr>
+                         <th>Country</th>
+                         <th>Total Confirmed</th>
+                         <th>Total Recovered</th>
+                         <th>Total Death</th>
+                         <th> New Confirmed </th>
+                         <th>New Recovered</th>
+                         <th>New Death</th>
+                     </tr>
+                 </table>
+             </div>
+        </section>
+          
+      </main>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="js/script.js"></script>
+    
+</body>
+</html>
