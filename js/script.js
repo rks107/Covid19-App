@@ -5,7 +5,7 @@ function fetch() {
     // for world covid cases
     var wrow = $("<tr>");
 
-    irow.append($('<td>'+ data.Global.TotalConfirmed +' </td>'))
+    wrow.append($('<td>'+ data.Global.TotalConfirmed +' </td>'))
        .append($('<td>'+ data.Global.TotalRecovered +' </td>'))
        .append($('<td>'+ data.Global.TotalDeaths +' </td>'))
        .append($('<td>'+ data.Global.NewConfirmed +' </td>'))
