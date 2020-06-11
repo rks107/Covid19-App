@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body onload="fetch()">
+<body class="bg-light" onload="fetch()">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light p-3" id="nav_style">
@@ -25,10 +25,10 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Symptoms</a>
+                <a class="nav-link" href="symptoms.html">Symptoms</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Prevention</a>
@@ -43,7 +43,7 @@
 
       <main>
 
-        <div class="main_header">
+        <div class="main_header bg-info">
             <div class="row h-100 w-100">
                 <div class="col-lg-5 cog-md-5 col-12  order-lg-1 order-2 d-lg-block d-none">
                     <div class="leftside h-100 w-100 d-flex justify-content-center align-items-center">
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <section class="corona_update m-2 bg-light">
+        <section class="india_corona_update corona_update m-2 mb-4">
             <div mb-3>
                 <h3 class="text-uppercase text-center p-3">India covid-19 Cases</h3>
             </div>
@@ -90,7 +90,7 @@
             </div>
         </section>
 
-        <section class="corona_update m-2 bg-light">
+        <section class="world_corona_update corona_update m-2  mb-4">
             <div mb-3>
                 <h3 class="text-uppercase text-center p-3">World covid-19 Cases</h3>
             </div>
@@ -100,7 +100,7 @@
                     <p> Total Confirmed </p>
                 </div>
                 <div>
-                    <h1 class="world-TotalRecovered">23732</h1>
+                    <h1 class="world-TotalRecovered"></h1>
                     <p> Total Recovered </p>
                 </div>
                 <div>
@@ -122,12 +122,12 @@
             </div>
         </section>
 
-        <div class="form-group m-2">
+        <div class="form-group m-2 my-4">
             <input type="text" class="form-control text-center text-capitalize" placeholder="enter Country Name">
-            <button class="btn btn-primary mt-1"> Search</button>
+            <button id="search-button" class="btn btn-primary mt-1"> Search</button>
         </div>
 
-        <section class="corona_update m-2 bg-light" id="serch-contry">
+        <section class="corona_update m-2 bg-warning" id="serch-contry">
             <div mb-3>
                 <h3 class="text-uppercase text-center p-3"><span id="contry-name"></span> covid-19 Cases</h3>
             </div>
@@ -222,10 +222,10 @@
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="js/script.js"></script>
     
 </body>
 </html>

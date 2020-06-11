@@ -64,7 +64,7 @@ function fetch() {
 }
 
 
-$('button').click(displayCountry);
+$('#search-button').click(displayCountry);
 // Search by Enter Key
 $('input').on("keyup", function(event){
     if(event.keyCode == 13 && $('input').val() != "") {
@@ -102,7 +102,7 @@ function displayCountry(){
         }
 
         if(i == data.Countries.length) {
-            let display = countryName + " Country not founded!"
+            let display = countryName + " Country not found !"
             alert(display);
         }
         

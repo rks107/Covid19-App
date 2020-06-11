@@ -56,6 +56,10 @@
 }
 
 /************** CORONA UPDATES   ***********/
+
+.world_corona_update, .india_corona_update{
+    background-color: hsla(78, 87%, 67%, 0.698);
+}
 .corona_update {
     margin: 0 0 30px 0;
     box-shadow: 0 0 5px rgba(0,0,0,0.6);
