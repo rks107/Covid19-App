@@ -13,7 +13,71 @@
     color: white;
 }
 
+/* Main Header */
 
+.main_header {
+    width: 100%;
+}
+
+.rightside h1{
+    font-size: 3rem;
+}
+
+.corona-rotate img{
+    animation: gocorona 3s linear infinite;
+}
+@keyframes gocorona {
+    0%{ transform: rotate(0);}
+    100%{ transform: rotate(360deg);}
+}
+
+.leftside img {
+    animation: stay-alert 5s linear infinite;
+}
+@keyframes stay-alert {
+    0% {
+        transform: scale(.75);
+    }
+    20% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(.75);
+    }
+    60% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(0.75);
+    }
+    100% {
+        transform: scale(.75);
+    }
+}
+
+/************** CORONA UPDATES   ***********/
+.corona_update {
+    margin: 0 0 30px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+.corona_update h3 {
+    color: #ff7675;
+}
+.corona_update h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+/********** search  ***********/
+
+#serch-contry {
+    display: none;
+}
+
+
+button  {
+    margin-left: 48%;
+}
 .country {
     background-color: darkorchid;
     color: white;
@@ -51,9 +115,17 @@ td {
     opacity: 0.8;
 }
 
-section {
-    box-shadow: 0 0 5px rgba(0,0,0,0.6);
-}
 #india_tbval tr {
     text-align: center;
+}
+
+@media screen and (max-width:800px) {
+    button{
+        margin-left: 45%;
+    }
+}
+@media screen and (max-width:500px) {
+    button{
+        margin-left: 41%;
+    }
 }
